@@ -16,7 +16,7 @@ const ManageBookings = () => {
     enabled: !loading,
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/payments/all`,
+        `https://foodi-server-fdln.onrender.com/payments/all`,
         {
           headers: {
             authorization: `Bearer ${token}`,
